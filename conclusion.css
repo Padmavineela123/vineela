@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.text{
+    padding: 8px;
+    text-align: center;
+}
+
+.logo{
+	width: 0px;
+	float: left;
+	height: 90px;
+}
+
+.img{
+	padding-top: 10px;
+    padding-left: 150px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    margin-top: 8px;
+    width: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    width: 98%;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: midnightblue;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 94%;
+    position: absolute;
+    top: 32%;
+    text-align: left;
+    color: black;
+    padding-left: 20px;
+}
+
+.content h1{
+    padding-top: 10px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.pics{
+    padding-top: 170px;
+    padding-left: 20px;
+}
+
+.pics h1{
+    color: black;
+}
+
+.pics p{
+    font-size: 20px;
+    color: black;
+    padding-left: 130px;
+    padding-top: 10px;
+}
+
+.pics img{
+    padding-left: 140px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+    .banner{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .text {
+        padding-top: 140px;
+        text-align: center;
+    }
+
+    .logo{
+        width: 0px;
+        height: 90px;
+    }
+    
+    .img{
+        padding-top: 10px;
+        padding-bottom: 200px;
+        padding-left: 110px;
+        cursor: pointer;
+    }
+
+    .text p {
+        font-size: 10px;
+    }
+
+    .navbar{
+        height: 5px;
+    }
+
+    .navbar ul {
+        width: 40%;
+        background: midnightblue;
+        position: absolute;
+        top: 420px;
+        right: 0;
+        z-index: 2;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li a {
+        color: white;
+    }
+
+    .menu-icon{
+        display: block;
+        padding-top: 10px;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .content{
+        width: 94%;
+        top: 59%;
+        text-align: left;
+        color: #FFFFF0;
+        color: black;
+    }
+    
+    .content h1{
+        padding-top: 10px;
+    }
+    
+    .content p{
+        margin: 17px auto;
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .pics{
+        padding-left: 15px;
+        padding-top: 260px;
+    }
+    
+    .pics h1{
+        color: black;
+	font-size: 30px;
+    }
+    
+    .pics p{
+        font-size: 14.5px;
+        color: black;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    
+    .pics img{
+        padding-left: 58px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    
+}
